@@ -9,7 +9,6 @@ public class Radio {
     private int maxVolume = 100;  //Максимальный уровень звука
     private int currentVolume; //Текущее положение звука
 
-    // All args constructor
 
     public Radio() {
     }

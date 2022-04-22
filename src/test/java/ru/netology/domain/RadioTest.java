@@ -100,4 +100,11 @@ class RadioTest {
         radio.prevCurrentVolume();
         assertEquals(0, radio.getCurrentVolume());
     }
+
+    @Test // Тест для радио с 10 станциями (с 0 по 9)
+    public void setImpossibleRadioChannel() {
+        int expectedRadioChannel = 0;
+        radio.setCurrentRadioChannel(15);
+        assertEquals(expectedRadioChannel, radio.getCurrentRadioChannel());
+    }
 }
