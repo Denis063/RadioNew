@@ -1,10 +1,9 @@
 package ru.netology.domain;
 
 public class Radio {
-    private final int maxRadioChannel = 9; //Максимальный канал
-    private final int minRadioChannel = 0; //Минимальный канал
+    private int maxRadioChannel = 9; //Максимальный канал
+    private int minRadioChannel = 0; //Минимальный канал
     private int currentRadioChannel; //Текущее положение радиоканала
-    private int numRadioChannel = 10; // Общее количество каналов
     private int minVolume = 0; //Минимальный уровень звука
     private int maxVolume = 100;  //Максимальный уровень звука
     private int currentVolume; //Текущее положение звука
@@ -14,7 +13,7 @@ public class Radio {
     }
 
     public Radio(int numRadioChannel) {
-        this.numRadioChannel = numRadioChannel;
+        this.maxRadioChannel = numRadioChannel - 1;
     }
 
     public int getCurrentRadioChannel() {
