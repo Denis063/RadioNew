@@ -130,7 +130,4 @@ class RadioTest {
         radio.setCurrentRadioChannel(15);
         assertEquals(expectedRadioChannel, radio.getCurrentRadioChannel());
     }
-
-
-
 }
